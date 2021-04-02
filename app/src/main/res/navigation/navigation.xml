@@ -6,5 +6,13 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="cd.amateurmobiledev.leaning.HomeFragment"
-        android:label="HomeFragment" />
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_questionFragment"
+            app:destination="@id/questionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionFragment"
+        android:name="cd.amateurmobiledev.leaning.QuestionFragment"
+        android:label="QuestionFragment" />
 </navigation>
