@@ -14,5 +14,20 @@
     <fragment
         android:id="@+id/questionFragment"
         android:name="cd.amateurmobiledev.leaning.QuestionFragment"
-        android:label="QuestionFragment" />
+        android:label="QuestionFragment" >
+        <action
+            android:id="@+id/action_questionFragment_to_overGameFragment"
+            app:destination="@id/overGameFragment" />
+        <action
+            android:id="@+id/action_questionFragment_to_winGameFragment"
+            app:destination="@id/winGameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/winGameFragment"
+        android:name="cd.amateurmobiledev.leaning.WinGameFragment"
+        android:label="WinGameFragment" />
+    <fragment
+        android:id="@+id/overGameFragment"
+        android:name="cd.amateurmobiledev.leaning.OverGameFragment"
+        android:label="OverGameFragment" />
 </navigation>
