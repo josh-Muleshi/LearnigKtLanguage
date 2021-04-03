@@ -33,6 +33,7 @@ class HomeFragment : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return NavigationUI.onNavDestinationSelected(item,requireView().findNavController()) || super.onOptionsItemSelected(item)
+        val navController = requireView().findNavController()
+        return NavigationUI.onNavDestinationSelected(item,navController) || super.onOptionsItemSelected(item)
     }
 }
