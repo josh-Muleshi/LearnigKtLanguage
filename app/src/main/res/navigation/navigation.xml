@@ -46,4 +46,8 @@
             app:popUpTo="@id/homeFragment"
             app:popUpToInclusive="false" />
     </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="cd.amateurmobiledev.leaning.AboutFragment"
+        android:label="AboutFragment" />
 </navigation>
